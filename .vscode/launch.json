@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:tui-todo}",
+            "name": "Debug tui-todo",
+            "program": "${workspaceFolder:tui-todo}/.build/debug/tui-todo",
+            "preLaunchTask": "swift: Build Debug tui-todo"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:tui-todo}",
+            "name": "Release tui-todo",
+            "program": "${workspaceFolder:tui-todo}/.build/release/tui-todo",
+            "preLaunchTask": "swift: Build Release tui-todo"
+        }
+    ]
+}
