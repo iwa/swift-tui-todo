@@ -1,6 +1,9 @@
 import SwiftTUI
 
-struct ContentView: View {
+let appState = AppState()
+
+@MainActor
+struct ContentView: @preconcurrency View {
     var body: some View {
         content
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
