@@ -9,7 +9,7 @@ struct ContentView: View {
 
     private var content: some View {
         VStack {
-            Text("   To-Do   ")
+            Text("   To-Do")
             .bold()
             .foregroundColor(Color.blue)
 
