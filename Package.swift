@@ -9,7 +9,7 @@ let package = Package(
         .macOS(.v11)
     ],
     dependencies: [
-        .package(url: "https://github.com/rensbreur/SwiftTUI", from: "0.1.0")
+        .package(url: "https://github.com/rensbreur/SwiftTUI", revision: "537133031bc2b2731048d00748c69700e1b48185")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
