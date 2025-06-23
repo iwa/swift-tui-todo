@@ -8,4 +8,8 @@ struct Todo {
         self.title = title
         self.completed = completed
     }
+
+    mutating func toggle() {
+        self.completed.toggle()
+    }
 }
