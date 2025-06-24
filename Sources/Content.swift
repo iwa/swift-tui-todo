@@ -2,6 +2,7 @@ import SwiftTUI
 
 struct ContentView: View {
     @Binding var todoList: [Todo]
+    @Binding var nextId: Int
 
     var body: some View {
         VStack {
@@ -26,6 +27,15 @@ struct ContentView: View {
                         }
                     }
                 }
+            }
+
+            Spacer()
+
+            Divider().foregroundColor(Color.gray)
+
+            TextField(placeholder: "To do...") {
+                todoList.append(Todo(id: nextId, title: $0))
+                nextId += 1
             }
         }
     }

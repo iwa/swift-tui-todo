@@ -6,10 +6,10 @@ struct MainView: View {
         Todo(id: 2, title: "Walk the dog"),
         Todo(id: 3, title: "Read a book")
     ]
-    @State var selection = -1
+    @State var nextId = 4
 
     var body: some View {
-        ContentView(todoList: $todoList)
+        ContentView(todoList: $todoList, nextId: $nextId)
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
             .border(.rounded)
     }
