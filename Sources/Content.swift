@@ -19,7 +19,13 @@ struct ContentView: View {
                             todoList[index].toggle()
                         }
                     }
-                    Text("\(todo.id) - \(todo.title)")
+
+                    if todo.completed {
+                        Text("\(todo.id) - \(todo.title)").strikethrough().italic().foregroundColor(.gray)
+                    } else {
+                        Text("\(todo.id) - \(todo.title)")
+                    }
+
                     Spacer()
                     Button("Remove") {
                         if let index = todoList.firstIndex(where: { $0.id == todo.id }) {
